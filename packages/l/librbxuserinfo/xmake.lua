@@ -9,7 +9,7 @@ package("librbxuserinfo")
         if package:config("shared") then
             configs.kind = "shared"
         end
-        os.cp("$(scriptdir}/include/", package:installdir())
+        os.cp("$(scriptdir}/include", package:installdir())
         import("package.tools.xmake").install(package, configs)
     end)
 
