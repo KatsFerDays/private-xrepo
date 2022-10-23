@@ -3,6 +3,8 @@ package("librbxuserinfo")
 
     add_urls("https://github.com/KatsFerDays/libRbxUserInfo.git")
     add_versions("1.0.0", "2c9d77067978f0669d84dd8f7f7c72b0068a16bc")
+    
+    add_deps("cpr", "nlohmann_json")
 
     on_install(function (package)
         local configs = {}
@@ -10,7 +12,6 @@ package("librbxuserinfo")
             configs.kind = "shared"
         end
         import("package.tools.xmake").install(package, configs)
-        os.cp("$(buildir)/include/*.hpp", package:installdir("include"))
     end)
 
     on_test(function (package)
