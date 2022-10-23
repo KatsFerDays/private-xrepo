@@ -2,7 +2,7 @@ package("librbxuserinfo")
     set_description("The libRbxUserInfo package")
 
     add_urls("https://github.com/KatsFerDays/libRbxUserInfo.git")
-    add_versions("1.0.0", "9af001a42c646553f2519d6eb303c32860966f0c")
+    add_versions("1.0.0", "4e8179f9442ffd3c14e566a51352a96ccb096abc")
 
     on_install(function (package)
         local configs = {}
