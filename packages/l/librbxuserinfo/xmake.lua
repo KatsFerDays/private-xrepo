@@ -10,7 +10,7 @@ package("librbxuserinfo")
             configs.kind = "shared"
         end
         import("package.tools.xmake").install(package, configs)
-        os.cp("include/*", package:installdir())
+        os.cp("*.hpp", package:installdir("include"))
     end)
 
     on_test(function (package)
