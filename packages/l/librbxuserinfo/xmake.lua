@@ -2,7 +2,7 @@ package("librbxuserinfo")
     set_description("The libRbxUserInfo package")
 
     add_urls("https://github.com/KatsFerDays/libRbxUserInfo.git")
-    add_versions("1.0.0", "5dcc40c91be6a4dcfd2dcdd961e53ac4756e5863")
+    add_versions("1.0.0", "2c9d77067978f0669d84dd8f7f7c72b0068a16bc")
     
     add_includedirs("include")
 
