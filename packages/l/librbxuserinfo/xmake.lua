@@ -3,6 +3,8 @@ package("librbxuserinfo")
 
     add_urls("https://github.com/KatsFerDays/libRbxUserInfo.git")
     add_versions("1.0.0", "cd048f733ccf105f7dbcdd6e5120bd7398bec8e7")
+    package:add("deps", "cpr")
+    package:add("deps", "nlohmann_json")
 
     on_install(function (package)
         local configs = {}
